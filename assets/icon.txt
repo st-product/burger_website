@@ -1,0 +1,19 @@
+
+Remix icon
+<i class="ri-menu-line"></i>
+<i class="ri-close-line"></i>
+<i class="ri-moon-line"></i>
+
+Font awesome
+<i class="fa-solid fa-droplet"></i>
+<i class="fa-solid fa-utensils"></i>
+<i class="fa-brands fa-envira"></i>
+
+
+Burgers May be cooked to order per guest request.
+Burgers are undercooked at 145ºF. 
+Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. 
+Please inform a team member if you have a food allergy before placing your order. 
+Percent daily values (dv) are based on a 2,000 calorie diet. 
+Your daily values may be higher or lower depending on your individual calorie needs. 
+Additional information is provided upon request

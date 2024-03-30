@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burger website</title>
+    <link rel="shortcut icon" href="img/burger_1161644.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- Header -->
+   <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 dark:bg-blackColor" id="header">
+        <nav class="container relative h-14 flex justify-between items-center">
+            <div>
+                <a class="text-2xl uppercase font-oswald" href="#">Bur<span class="text-secondaryColor ">ger</span></a>
+            </div>
+
+            <div class="hidden absolute left-0 top-0 w-full dark:bg-blackColor py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+                <ul class="flex flex-col text-center md:flex-row gap-5">
+                    <li>
+                        <a class="nav__link text-secondaryColor hover:text-secondaryColor ease-in duration-200" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#review">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl" id="theme-toggle"></i>
+
+                <div class="md:hidden" id="hamburger">
+                <i class="ri-menu-line cursor-pointer text-xl"></i>
+            </div>
+        </nav>
+   </header>
+
+   <main>
+    <!-- Home -->
+        <section id="home">
+            <div class="container flex flex-col items-center gap-10 md:flex-row">
+                <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
+                    <img src="./img/home-image.png" alt="home image" class="w-60 md:w-full">
+                </div>
+                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                    <h1 class="home__title">happy tummy with tasty burers.</h1>
+                    <div class="separator mx-auto md:mx-0"></div>
+                    <p class="paragraph">At Happy Tummy we are obsessed with burgers. To us, burgers aren't just another meal. We Chef craft our burgers with obsessive zeal. We don't compromise on quality or ingredients. We are burgers reinvented. Our recipes are meticulously crafted and infused with flavors that are crazy crave-able. While others are content to call re-heating and de-frosting “Gourmet”, we do things differently. We hand-cut, and hand-patty our burgers in our kitchen for each and every order.</p>
+                    <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+                        <div class="text-center">
+                            <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+                            <br />
+                            Delicious
+                        </div>
+                        <div class="text-center">
+                            <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+                            <br />
+                            Fresh
+                        </div>
+                        <div class="text-center">
+                            <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+                            <br />
+                            Organic
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Category -->
+        <section id="category">
+            <div class="container flex flex-col gap-5 md:flex-row">
+            <!-- Card 1 -->
+                <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative">
+                        <img src="img/food-3.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+                    </div>
+                    <div>
+                        <div class="mb-2">
+                            <h4 class="card__title">Burger</h4>
+                            <p class="text-sm">Bacon, Chessy, Beef </p>
+                        </div>
+                        <a href="" class="text-blackColor cursor-pointer">Buy online</a>
+                    </div>
+                </div>
+
+            <!-- Card 2 -->
+                <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative">
+                        <img src="img/snack-2.png" alt="snack image" class="absolute w-28 -bottom-4 -left-4">
+                    </div>
+                    <div>
+                        <div class="mb-2">
+                            <h4 class="card__title">Snack</h4>
+                            <p class="text-sm">Sweet potato fries</p>
+                        </div>
+                        <a href="" class="text-secondaryColor cursor-pointer">Buy online</a>
+                    </div>
+                </div>
+
+            <!-- Card 3 -->
+                <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative">
+                        <img src="img/beverage-1.png" alt="beverage image" class="absolute w-28 -bottom-4 -left-4">
+                    </div>
+                    <div>
+                        <div class="mb-2">
+                            <h4 class="card__title">Beverage</h4>
+                            <p class="text-sm">Fruits cocktails</p>
+                        </div>
+                        <a href="" class="text-secondaryColor cursor-pointer">Buy online</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Promo -->
+        <section id="promo">
+            <div class="container flex flex-col gap-5 lg:gp-10 lg:flex-row">
+                <!-- Card 1 -->
+                <div class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                    <img src="img/food-1.png" alt="promo image" class="w-40 mx-auto md:mx-5">
+                    <div class="space-y-2 pt-5 md:pt-0">
+                        <p class="text-xs text-secondaryColor">Payday promo</p>
+                        <h3 class="card__title">Get a 10% dicount on payday week</h3>
+                        <p class="paragraph">LIMITED TIME ONLY: ANGUS BEEF PATTY, CHEDDAR, CRISPY TATER TOTS, APPLEWOOD SMOKED BACON, JALAPEÑOS, KETCHUP, CILANTRO SOUR CREAM, THREE CHEESE SAUCE, TOASTED BRIOCHE BUN</p>
+                        <a href="#" class="text-xs text-secondaryColor">Buy online</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                    <img src="img/beverage-3.png" alt="promo image" class="w-40 mx-auto md:mx-5">
+                    <div class="space-y-2 pt-5 md:pt-0">
+                        <p class="text-xs text-secondaryColor">Payday promo</p>
+                        <h3 class="card__title">Get a 15% dicount on payday week</h3>
+                        <p class="paragraph">FREE OF HORMONES AND ANTIBIOTICS,
+                            OUR PINEAPPLE COCKTAIL IS JUICY AND DELICIOUS.</p>
+                        <a href="#" class="text-xs text-secondaryColor">Buy online</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <scetion id="about">
+            <div class="container flex flex-col gap-10 md:flex-row pt-20">
+                <div class="flex-1">
+                    <img src="img/food-burger-1.jpg" alt="about image" class="rounded-lg">
+                </div>
+                <div class="flex-1">
+                    <h2 class="section__title">find food and drinks all-in-one place for your best taste.</h2>
+                    <div class="separator"></div>
+                    <p class="paragraph">You can taste the marbling in our hand-cut Angus Beef when you take your first juicy beef burger bite. Free of hormones and antibiotics, our Chicken and Veggie burgers are crafted with a passion to deliver only the best. We obsess about the redness of the tomatoes, the crispness of the salad greens, the toasty-ness of the bun. We don't compromise where others do. You can taste what makes Happy Tummy different</p>
+                    <ul class="grid grid-cols-2 py-5 space-y-1">
+                        <li class="text-xs text-paragraphColor">
+                            <i class="fa-solid fa-check text-secondaryColor"></i>
+                            Best Price
+                        </li>
+                        <li class="text-xs text-paragraphColor">
+                            <i class="fa-solid fa-check text-secondaryColor"></i>
+                            Fresh Ingredient
+                        </li>
+                        <li class="text-xs text-paragraphColor">
+                            <i class="fa-solid fa-check text-secondaryColor"></i>
+                            Best Service
+                        </li>
+                        <li class="text-xs text-paragraphColor">
+                            <i class="fa-solid fa-check text-secondaryColor"></i>
+                            Health Protocol
+                        </li>
+                    </ul>
+                    <a href="" class="btn btn-primary">About Us</a>
+                </div>
+            </div>
+
+        </scetion>
+
+        <!-- Menu -->
+        <section id="menu">
+            <div class="container">
+                <div class="max-w-md mx-auto text-center">
+                    <h2 class="section__title">Our Best Menu</h2>
+                    <div class="separator mx-auto"></div>
+                    <p class="paragraph">Burgers, Fries + Sides, Shakes + Cookies, Fresh Salads, Sliders + Dogs + Tenders, Kids Meal, Catering Menu</p>
+                    
+                    <div class="tabs_wrap">
+                        <ul class="flex flex-wrap justify-center gap-3 py-10">
+                            <li data-tabs="all" class="btn dark:bg-darkColorLight bg-primaryColorLight active">ALL</li>
+                            <li data-tabs="food" class="btn dark:bg-darkColorLight bg-primaryColorLight">Food</li>
+                            <li data-tabs="snack" class="btn dark:bg-darkColorLight bg-primaryColorLight">Snack</li>
+                            <li data-tabs="beverage" class="btn dark:bg-darkColorLight bg-primaryColorLight">Beverage</li>
+                        </ul>
+                    </div>
+                </div>
+                    <div>
+                        <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+
+                            <!-- Food -->
+                            <li class="item_wrap food">
+                                <div class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor bg-primaryColorLight rounded-3xl hover:bg-secondaryColor lg:h-40">
+                                    <img src="img/food-2.png" alt="food image" class="w-40 md:w-48 lg:w-24">
+                                </div>
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Regular beef burger</h4>
+                                        <p class="paragraph">angus beef patty, 21 sauce, lettuce, Roma tomato, toasted brioche bun</p>
+                                    </div>
+                                    <p class="text-secondaryColor">$42.00</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap food">
+                                <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor dark:bg-darkColorLight dark:hover:bg-secondaryColor lg:h-40">
+                                    <img src="img/food-3.png" alt="food image" class="w-40 md:w-48 lg:w-24">
+                                </div>
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Bacon Cheesy</h4>
+                                        <p class="paragraph">angus beef patty, 21 sauce, applewood smoked bacon, choice of cheese, onions, lettuce, Roma tomato, toasted brioche bun</p>
+                                    </div>
+                                    <p class="text-secondaryColor">$45.00</p>
+                                </div>
+                            </li>
+
+                            <!-- Snack -->
+                            <li class="item_wrap snack">
+                                <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor dark:bg-darkColorLight dark:hover:bg-secondaryColor lg:h-40">
+                                    <img src="img/snack-2.png" alt="snack image" class="w-40 md:w-48 lg:w-24">
+                                </div>
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Fresh fries</h4>
+                                        <p class="paragraph">Sweet Potato fries</p>
+                                    </div>
+                                    <p class="text-secondaryColor">$12.00</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap snack">
+                                <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor dark:bg-darkColorLight dark:hover:bg-secondaryColor lg:h-40">
+                                    <img src="img/snack-1.png" alt="snack image" class="w-40 md:w-48 lg:w-24">
+                                </div>
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Half + Half Fries</h4>
+                                        <p class="paragraph">choice of two: sweet potato (GF), French fries (GF) or onion strings</p>
+                                    </div>
+                                    <p class="text-secondaryColor">$19.00</p>
+                                </div>
+                            </li>
+
+                            <!-- Beverage -->
+                            <li class="item_wrap beverage">
+                                <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor dark:bg-darkColorLight dark:hover:bg-secondaryColor lg:h-40">
+                                    <img src="img/beverage-2.png" alt="beverage image" class="w-40 md:w-48 lg:w-24">
+                                </div>
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Sweet smoothie</h4>
+                                        <p class="paragraph">Mixture of apple, pineaple, mango and watermelon all together</p>
+                                    </div>
+                                    <p class="text-secondaryColor">$21.00</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap beverage">
+                                <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor dark:bg-darkColorLight dark:hover:bg-secondaryColor lg:h-40">
+                                    <img src="img/beverage-1.png" alt="beverage image" class="w-40 md:w-48 lg:w-24">
+                                </div>
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Dressings</h4>
+                                        <p class="paragraph">avocado-ranch • ranch • santa fe • honey mustard • sweet + creamy balsamic • fat free balsamic</p>
+                                    </div>
+                                    <p class="text-secondaryColor">$18.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+        </section>
+
+        <!-- Review -->
+        <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight py-20">
+            <div class="container">
+                <div class="max-w-md mx-auto text-center">
+                    <h2 class="section__title">customer review</h2>
+                    <div class="separator mx-auto"></div>
+                    <p class="paragraph">Restaurant owners are now going an extra mile to satisfy their clients. By adding free dessert, “on the house” drink, and extra politeness are some of the new features that are helping them for their restaurant. And we always try our best not to forget to write reviews, especially when we are satisfied from the service and food in a this restaurant</p>
+                </div>
+
+                    <div class="swiper py-10">
+                        <ul class="swiper-wrapper space-y-2 md:flex flex-row md:space-x-2">
+                            
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                                    <p class="paragraph">This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.</p>
+                                    <div class="flex items-center">
+                                        <img src="img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                        <div class="ml-2">
+                                            <p class="font-oswald uppercase">John Doe</p>
+                                            <p class="paragraph">Designer</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                                    <p class="paragraph">First time in Happy Tummy and YOU have to go! It's the cutest little spot with amazing food. The Cheesy Burger is to die for. IT WAS FIRE!! The service we received was so amazing and we will definitely be back again. They made us feel welcomed and gave us an amazing experience.</p>
+                                    <div class="flex items-center">
+                                        <img src="img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                        <div class="ml-2">
+                                            <p class="font-oswald uppercase">Alex Cobe</p>
+                                            <p class="paragraph">Journalist</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                                    <p class="paragraph">It's a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.</p>
+                                    <div class="flex items-center">
+                                        <img src="img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                        <div class="ml-2">
+                                            <p class="font-oswald uppercase">Samiel Raita</p>
+                                            <p class="paragraph">Teacher</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="bg-secondaryColor py-16">
+            <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+                <div class="space-y-4 md:flex-1">
+                    <h2 class="section__title text-blackColor">Get exclusive update</h2>
+                    <p class="text-sm">Subscribe and leave us your email to receive daily news and promo about Happy Tummy in your inbox</p>
+                </div>
+                <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+                    <input type="email" placeholder="Email address" class="p-2 text-blackColor rounded-lg outline-none md:w-full">
+                    <a href="" class="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Subscribe
+                    </a>
+                </div>
+            </div>
+        </section>
+
+   </main>
+
+   <!-- Footer -->
+   <footer>
+    <section class="footer">
+        <div class="container">
+            <ul class="grid grid-cols-1 items-center gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+                <li>
+                    <div class="space-y-3">
+                        <a href="" class="text-4xl font-oswald uppercase">
+                            Bur<span class="text-secondaryColor">ger</span>
+                        </a>
+                        <p class="text-xs">Our goal is to create a neighborhood spot where friends, families, and coworkers can come together and eat delicious quality burgers</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-lg uppercase font-oswald">support</h3>
+                        <a href="" class="text-xs hover:text-secondaryColor">FAQ's</a>
+                        <a href="" class="text-xs hover:text-secondaryColor">Privacy</a>
+                        <a href="" class="text-xs hover:text-secondaryColor">Term & Condition</a>
+                        <a href="" class="text-xs hover:text-secondaryColor">Contact</a>
+                    </div>
+                </li>
+
+                <li class="space-y-8">
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-oswald uppercase">phone</h3>
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                            +237 680 808 080
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-oswald uppercase">email</h3>
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                            burger.info@email.com
+                        </p>
+                    </div>
+
+                    <li class="space-y-8">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-oswald uppercase">address</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-location-dot text-lg text-secondaryColor"></i>
+                                Address goes here
+                            </p>
+                        </div>
+    
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-oswald uppercase">follow us</h3>
+                            <div class="space-x-3">
+                                <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor"></i>
+                                <i class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor"></i>
+                                <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor"></i>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+            <div class="flex flex-col items-center border-t dark:border-darkColorLight border-primaryColorLight py-5 md:flex-row md:justify-between">
+                <p class="paragraph">Burger Template Kit by Steve</p>
+                <p class="paragraph">Copyright &copy; 2024. All rights reserved.    </p>
+            </div>
+        </div>
+    </section>
+   </footer>
+
+   <!-- Scroll up -->
+   <a href="#" class="fixed right-4 -bottom-1/2 bg-secondaryColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-blackColor z-50" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+   </a>
+
+   <script src="main.js"></script>
+</body>
+</html>
